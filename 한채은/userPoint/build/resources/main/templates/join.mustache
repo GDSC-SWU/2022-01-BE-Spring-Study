@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>스프링부트로 시작하는 웹페이지</title>
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/join.css">
+</head>
+<body>
+<header>
+    {{>layout/header}}
+</header>
+<section>
+    <div id="main_img_bar">
+        <img src="/img/main_img.png">
+    </div>
+    <div id="main_content">
+        <div id="join_box">
+            <form  name="member_form">
+                <h2>회원 가입</h2>
+                <div class="form id">
+                    <div class="col1">아이디</div>
+                    <div class="col2">
+                        <input type="text" id="id">
+                    </div>
+                    <div class="col3">
+                        <a href="#"><img id="check_id" src="/img/check_id.gif"></a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+
+                <div class="form">
+                    <div class="col1">비밀번호</div>
+                    <div class="col2">
+                        <input type="password" id="pass">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="form">
+                    <div class="col1">비밀번호 확인</div>
+                    <div class="col2">
+                        <input type="password" id="pass_confirm">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="form">
+                    <div class="col1">이름</div>
+                    <div class="col2">
+                        <input type="text" id="name">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="form email">
+                    <div class="col1">이메일</div>
+                    <div class="col2">
+                        <input type="text" id="email1">@<input type="text" id="email2">
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="bottom_line"> </div>
+                <div class="buttons">
+                    <button type="button" id="saveBtn">등록</button>
+                    <img id="reset_btn" style="cursor:pointer" src="/img/button_reset.gif">
+                </div>
+            </form>
+        </div> <!-- join_box -->
+    </div> <!-- main_content -->
+</section>
+<footer>
+    {{>layout/footer}}
+</footer>
+</body>
+</html>
